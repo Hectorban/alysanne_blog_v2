@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from 'next/image'
 import styles from "@/styles/components/navbar.module.css"
 import { secondary_font, main_font } from "@/lib/fonts"
 
@@ -10,6 +11,12 @@ export default function Navbar() {
           <h1 className={main_font.className}>
             <Link className={styles.link} href="/">
               <span>Alysanne</span>
+              <Image
+                src="/hexagram.png"
+                width={30}
+                height={30}
+                alt="Hexagram"
+              />
             </Link>
           </h1>
         </li>
