@@ -24,6 +24,17 @@
   text-decoration: none;
   font-size: 1rem;
   display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.svg {
+  width: 77px;
+  height: 77px;
+  animation-fill-mode: forwards;
+  animation: rotate 2s infinite;
+  animation-timing-function: linear;
+  transform-origin: center;
 }
 
 #nav [class*="fa-"] {
@@ -63,4 +74,13 @@
     text-align: left;
     margin-right: auto;
   }
+}
+
+@keyframes rotate {
+    from {
+        transform: perspective(77px) rotateY(360deg);
+    }
+    to {
+        transform: perspective(77px) rotateY(0deg);
+    }
 }
